@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Hello, World!</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <input type="checkbox" id="hamcheckbox" />
+    <label class="hamburger" for="hamcheckbox">&#9776</label>
+
+    <div class="hamitems">
+        <a href="#about">About me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#header">Home</a>
+    </div>
+</nav>
+<header id="header">
+    <h1>keyisfocus, not a developer</h1>
+</header>
+
+<section id="about">
+    <img src="image.jpg" alt="image">
+    <img src="dog.jfif" alt="Dog">
+    <div id="about-text">
+        <h2>About me</h2>
+        <p>Just a guy trying to learn<br>shit above his mental capacity</p>
+        <p><b>Skills:</b> many</p>
+    </div>
+</section>
+
+<h2>Portfolio</h2>
+<section id="portfolio">
+    <figure>
+        <img src="flashcards.bmp" alt="flashcards">
+        <figcaption>Flashcards</figcaption>
+        <button class="open-window" type="button" onclick="showWindow('flashcards')">Info</button>
+
+    </figure>
+    <figure>
+        <img src="piano.bmp" alt="piano">
+        <figcaption>Virtual Piano</figcaption>
+        <button class="open-window" type="button" onclick="showWindow('piano')">Info</button>
+    </figure>
+    <figure>
+        <img src="space.bmp" alt="space">
+        <figcaption>Open Space</figcaption>
+        <button class="open-window" type="button" onclick="showWindow('space')">Info</button>
+    </figure>
+
+    <div id="flashcards" class="window">
+        <h3>Flashcards</h3>
+        <p>You can see the project source code at:
+            <a href="https://github.com/keyisfocus/Flashcards.js" target="_blank">github</a></p>
+        <p>I did this project when I was studying the frontend on HyperSkill.</p>
+        <button type="button" onclick="closeWindow()">Close</button>
+    </div>
+
+    <div id="piano" class="window">
+        <h3>Virtual Piano</h3>
+        <p>You can see the project source code at:
+            <a href="https://github.com/keyisfocus/Virtual-Piano.js" target="_blank">github</a></p>
+        <p>I did this project when I was studying the frontend on HyperSkill.</p>
+        <button type="button" onclick="closeWindow()">Close</button>
+    </div>
+
+    <div id="space" class="window">
+        <h3>Open Space</h3>
+        <p>You can see the project source code at:
+            <a href="https://github.com/keyisfocus/Open-Space.js" target="_blank">github</a></p>
+        <p>I did this project when I was studying the frontend on HyperSkill.</p>
+        <button type="button" onclick="closeWindow()">Close</button>
+    </div>
+
+</section>
+
+<section id="contacts">
+    You cannot contact me :) <br>
+    <a href="https://github.com/keyisfocus" target="_blank"><img src="github.svg" width="100" alt="github"></a>
+</section>
+<footer>
+    keyisfocus<br>
+    2021
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(50, 21, 4, 0.31);
+    position: fixed;
+}
+
+nav label, input {
+    display: none;
+}
+
+.hamitems {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamitems a {
+    max-width: 20%;
+    padding: 1vh;
+
+    color: white;
+    text-decoration: none;
+    font-size: 4vh;
+    line-height: 1.7;
+}
+
+nav a:hover {
+    background-color: wheat;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav label {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-size: 4vh;
+        padding: 1vh;
+    }
+
+    .hamitems { display: none; }
+
+    .hamitems {
+        box-sizing: border-box;
+        display: block;
+        width: 30vw;
+        border-top: 1px solid #333;
+    }
+
+    .hamitems a {
+        font-size: 4vw;
+    }
+
+    #hamnav input:checked ~ #hamitems { display: block; }
+}
+
+header {
+    width: 99.1vw;
+    height: 100vh;
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+h1 {
+    color: darkgrey;
+    font-size: 4vh;
+    margin-bottom: 34vh;
+    margin-left: 15vw;
+}
+
+#about {
+    width: 99.1vw;
+    height: 100vh;
+    background-color: lightslategrey;
+}
+
+#about img[src="image.jpg"] {
+    width: 50vw;
+    position: relative;
+    top: 20vh;
+    left: 5vw;
+}
+
+#about img[src="dog.jfif"] {
+    width: 40vw;
+    position: relative;
+    top: 30vh;
+    left: -30vw;
+}
+
+#about-text {
+    width: 30vw;
+    position: relative;
+    font-size: 4vh;
+    line-height: 6vh;
+    left: 65vw;
+    top: -30vh;
+    margin-right: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 6vh;
+    line-height: 9vh;
+}
+
+#portfolio {
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: 4vh;
+
+}
+
+#portfolio figure img {
+    width: 30vw;
+}
+
+.open-window {
+    width: 5vw;
+    height: 2.5vh;
+    color: white;
+    background-color: #321504;
+    border: none;
+    border-radius: 0.2vw;
+}
+
+.window {
+    width: 40vw;
+    height: 20vh;
+    border: 0.3vw #321504 solid;
+    border-radius: 0.5vw;
+
+    text-align: center;
+    font-size: 2.5vh;
+    background-color: white;
+
+    position: absolute;
+    visibility: hidden;
+}
+
+.window p {
+    margin: 1vh;
+}
+
+.window button {
+    width: 5vw;
+    height: 4vh;
+    color: white;
+    border-radius: 0.3vw;
+    border: none;
+    background-color: #321504;
+}
+
+#contacts {
+    text-align: center;
+}
+
+footer {
+    background-color: rosybrown;
+    text-align: center;
+    color: navajowhite;
+    font-size: 3vh;
+}
